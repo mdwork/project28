@@ -55,21 +55,12 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
-	width: 1170px;
-    min-height: 100%;
+    position: relative;
+    z-index: 10;
+	width: 1154px;
 	margin: 0 auto;
 	border: 8px solid #575757;
     background: #fff;
-
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.wrapper:after {
-    content: '';
-    display: block;
-    height: 515px;
-    width: 100%;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -180,17 +171,14 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.wrap-container {
-    background: #fff;
-    overflow: hidden;
-}
-.container {
-    background: #212121;
-}
     .menu {
-        float: left;
+        position: relative;
+        z-index: 10;
+        display: table-cell;
         width: 305px;
+        padding-top: 25px;
         background: #212121;
+        vertical-align: top;
     }
         .menu li {
             position: relative;
@@ -206,14 +194,77 @@ a:hover                        { text-decoration:none; }
                 color: #fff;
                 text-decoration: none;
                 text-transform: uppercase;
+                transition: .3s;
+            }
+            .menu a:hover {
+                background: #3b3b3b;
             }
             .sub-menu {
+                position: absolute;
+                top: 0;
+                right: -285px;
                 display: none;
+                width: 285px;
+                background: #3b3b3b;
             }
+            .menu li:hover .sub-menu {
+                display: block;
+            }
+                .sub-menu li {
+                    border-top-color: #555;
+                }
+                .sub-menu li:first-child {
+                    border-top-color: transparent;
+                }
+                    .sub-menu a {
+                        font-size: 17px;
+                    }
+                    .sub-menu a:hover {
+                        background: #333;
+                    }
     .content {
+        display: table-cell;
         overflow: hidden;
+        padding: 45px;
         background: #fff;
+        vertical-align: top;
     }
+        .list-item-menu {
+            overflow: hidden;
+        }
+            .list-item-menu li {
+                overflow: hidden;
+                position: relative;
+                float: left;
+                width: 225px;
+                height: 170px;
+                margin: 0 0 40px 40px;
+            }
+            .list-item-menu li:nth-child(3n + 1) {
+                margin-left: 0;
+            }
+                .list-item-menu .foto {
+                    width: 100%;
+                    height: 100%;
+                    transition: .3s;
+                }
+                .list-item-menu li:hover .foto:hover {
+                    width: 120%;
+                    height: 120%;
+                    margin: -10% 0 0 -10%;
+                }
+                .list-item-menu .desc {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    height: 41px;
+                    padding: 8px 5px 8px 10px;
+                    background: rgba(0, 0, 0, .6);
+                    font: italic 17px 'Russo One', sans-serif;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -224,12 +275,11 @@ a:hover                        { text-decoration:none; }
 .footer {
     overflow: hidden;
     width: 1154px;
-    margin: -523px auto 120px;
+    margin: 0 auto 120px;
     border: 8px solid #575757;
     border-top: none;
     background: #474747;
     color: #f5f5f5;
-
 }
     .footer .top {
         overflow: hidden;

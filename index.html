@@ -3,17 +3,56 @@
 <head>
     <title>Index</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024, user-scalable=yes">
+    <meta name="viewport" content="width=1200, user-scalable=yes">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header"></div>
+        <div class="wrap-header">
+            <header class="header">
+                <span class="logo">
+                    <img src="images/header/main_logo.png" alt="">
+                </span>
+
+                <div class="right-box">
+                    <form action="" method="post">
+                        <span class="wrap-select">
+                            <select name="choose-language" class="choose-language">
+                                <option value="ru">Русский</option>
+                                <option value="ee">Эстонский</option>
+                                <option value="en">Английский</option>
+                            </select>
+                        </span>
+
+                        <span class="wrap-search-box">
+                            <input class="text" placeholder="Поиск">
+                            <button class="sbt" type="submit">Искать</button>
+                        </span>
+                    </form>
+
+                    <a class="tell" href="tel:+3726460113"><span>+372</span> 646 0113</a>
+                </div>
+            </header>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">О фирме</a></li>
+                    <li><a href="#">бренды</a></li>
+                    <li><a href="#">новости</a></li>
+                    <li><a href="#">отзывы</a></li>
+                    <li><a href="#">партнёры</a></li>
+                    <li><a href="#">Контакт</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="content"></div>
-        <div class="footer"></div>
     </div>
+
+    <footer class="footer"></footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/commonJs.js"></script>

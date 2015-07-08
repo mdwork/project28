@@ -2,22 +2,22 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:16px 'Open Sans', sans-serif; background: url("../images/bg.jpg") #fff; color:#212121; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
 	list-style:none;
 }
-button                         { cursor: pointer; padding: 0 }
-select, input, textarea        { font-size:12px; vertical-align:middle; }
+button                         { cursor: pointer; padding: 0; color: #fff }
+select, input, textarea,button { font:16px 'Open Sans', sans-serif; vertical-align:middle; color: #fff }
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:16px 'Open Sans', sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -44,9 +44,8 @@ a:hover                        { text-decoration:none; }
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 100%;
-	max-width: 980px;
-	margin: 0 auto;
+
+    font-family: 'Russo One', sans-serif;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
@@ -55,11 +54,85 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrapper {
+	width: 1154px;
+	margin: 0 auto 120px;
+	border: 8px solid #575757;
+    background: #fff;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.header {
+    overflow: hidden;
+    height: 145px;
+    background: url("../images/header/bg_header.jpg") no-repeat;
+}
+    .logo {
+        float: left;
+        margin: 22px 0 0 25px;
+    }
+    .header .right-box {
+        float: right;
+        margin: 30px 35px 0 0;
+        text-align: right;
+    }
+        .wrap-select {
+            position: relative;
+            float: left;
+            border: 3px solid #474747;
+            background: #575757;
+        }
+            .wrap-select:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 31px;
+                background: url("../images/header/triagle_bottom.png") no-repeat center #e30613;
+                pointer-events: none;
+            }
+            .wrap-select select {
+                display: block;
+                height: 31px;
+                border: none;
+                font-size: 17px;
+                background: #575757;
+            }
+        .wrap-search-box {
+            overflow: hidden;
+            float: left;
+            border: 3px solid #474747;
+            border-left: none;
+            background: #fff;
+        }
+            .wrap-search-box .text,
+            .wrap-search-box .sbt {
+                float: left;
+                height: 31px;
+                padding: 0 5px 0 15px;
+                border: none;
+            }
+            .wrap-search-box .text {
+                width: 125px;
+            }
+            .wrap-search-box .sbt {
+                width: 47px;
+                background: url("../images/header/search_icon.png") no-repeat center #e30613;
+                text-indent: -9999px;
+            }
+        a.tell {
+            display: inline-block;
+            margin: 10px 5px 0 0;
+            font: 35px 'Russo One', sans-serif;
+            color: #e30613;
+            text-decoration: none;
+        }
+            .tell span {
+                font-size: 27px;
+                color: #fff;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/

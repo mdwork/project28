@@ -182,20 +182,135 @@ a:hover                        { text-decoration:none; }
     border-top: none;
     background: #474747;
     color: #f5f5f5;
-    font-family: 'Russo One', sans-serif;
-}
-.footer a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-family: 'Russo One', sans-serif;
+
 }
     .footer .top {
         overflow: hidden;
         padding: 45px 60px 60px;
+        font-family: 'Russo One', sans-serif;
+    }
+    .footer .top a {
+        color: #f5f5f5;
+        text-decoration: none;
+        font-family: 'Russo One', sans-serif;
     }
         .footer .left {
             float: left;
         }
+            .footer-logo {
+                display: block;
+                margin-bottom: 25px;
+            }
+            .footer .left .wrap {
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+                .footer .left .wrap > li {
+                    overflow: hidden;
+                    margin-bottom: 15px;
+                }
+                    .footer .left .wrap > li:before,
+                    .wrap-tell:before,
+                    .wrap-mail:before {
+                        content: '';
+                        float: left;
+                        height: 100%;
+                        width: 70px;
+                        margin-right: 10px;
+                        vertical-align: middle;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .location:before {
+                        min-height: 45px;
+                        background-image: url("../images/footer/icon_location.png");
+                    }
+                    .schedule:before {
+                        min-height: 45px;
+                        background-image: url("../images/footer/schedule_icon.png");
+                    }
+                    .wrap-tell:before {
+                        min-height: 15px;
+                        background-image: url("../images/footer/tell_icon.png");
+                    }
+                    .wrap-mail:before {
+                        min-height: 15px;
+                        background-image: url("../images/footer/mail_icon.png");
+                    }
+                    .footer .left .wrap > li > span,
+                    .location > span,
+                    .schedule > span,
+                    .wrap-tell .tell,
+                    .wrap-mail .mail {
+                        overflow: hidden;
+                    }
+                        .time {
+                            display: inline-block;
+                            font-size: 15px;
+                            vertical-align: middle;
+                        }
+                            .time .sup {
+                                vertical-align: top;
+                                font-size: 8px;
+                            }
+                        .close {
+                            display: inline-block;
+                            height: 14px;
+                            width: 12px;
+                            margin-left: 9px;
+                            background: url("../images/footer/close_icon.png") no-repeat;
+                            vertical-align: middle;
+                            text-indent: -9999px;
+                        }
+                        .day-week {
+                            overflow: hidden;
+                            margin-top: 7px;
+                        }
+                            .day-week li {
+                                float: left;
+                                width: 11px;
+                                height: 17px;
+                                margin-left: 3px;
+                                background: #fff;
+
+                                -webkit-border-radius: 2px;
+                                -moz-border-radius: 2px;
+                                border-radius: 2px;
+                            }
+                            .day-week .inactive {
+                                background: #f00;
+                            }
+                            .day-week li:first-child {
+                                margin-left: 0;
+                            }
+            .soc-link {
+                overflow: hidden;
+                text-align: center;
+            }
+                .soc-link li {
+                    display: inline-block;
+                    margin: 0 15px;
+                    vertical-align: middle;
+                    background: no-repeat center;
+                }
+                    .soc-link .fb a {
+                        display: block;
+                        height: 28px;
+                        width: 13px;
+                        background-image: url("../images/footer/fb.png");
+                        text-indent: -9999px;
+                    }
+                    .soc-link .yt a {
+                        display: block;
+                        height: 28px;
+                        width: 28px;
+                        background-image: url("../images/footer/yt.png");
+                        text-indent: -9999px;
+                        transition: .3s;
+                    }
+                    .soc-link a:hover {
+                        opacity: .7;
+                    }
         .footer .right {
             float: right;
         }
@@ -234,6 +349,22 @@ a:hover                        { text-decoration:none; }
                         .footer-nav li:first-child {
                             margin-top: 0;
                         }
+    .footer .bottom {
+        overflow: hidden;
+        padding: 23px 0 15px;
+        background: #575757;
+        color: #979797;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+        .copyright {
+            float: left;
+            margin-left: 20px;
+        }
+        .author {
+            float: right;
+            margin-right: 20px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/

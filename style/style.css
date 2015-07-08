@@ -90,6 +90,9 @@ h1 {
         margin: 30px 35px 0 0;
         text-align: right;
     }
+    .right-box form {
+        overflow: hidden;
+    }
         .wrap-select {
             position: relative;
             float: left;

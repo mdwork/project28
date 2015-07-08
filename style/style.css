@@ -55,10 +55,21 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
-	width: 1154px;
+	width: 1170px;
+    min-height: 100%;
 	margin: 0 auto;
 	border: 8px solid #575757;
     background: #fff;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrapper:after {
+    content: '';
+    display: block;
+    height: 515px;
+    width: 100%;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -177,7 +188,7 @@ a:hover                        { text-decoration:none; }
 .footer {
     overflow: hidden;
     width: 1154px;
-    margin: 0 auto 120px;
+    margin: -523px auto 120px;
     border: 8px solid #575757;
     border-top: none;
     background: #474747;

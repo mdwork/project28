@@ -74,6 +74,9 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrap-header {
+    border-bottom: 8px solid #575757;
+}
 .header {
     overflow: hidden;
     height: 145px;
@@ -177,7 +180,40 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrap-container {
+    background: #fff;
+    overflow: hidden;
+}
+.container {
+    background: #212121;
+}
+    .menu {
+        float: left;
+        width: 305px;
+        background: #212121;
+    }
+        .menu li {
+            position: relative;
+            border-top: 1px solid #3b3b3b;
+        }
+        .menu li:first-child {
+            border-top: none;
+        }
+            .menu a {
+                display: block;
+                padding: 14px 5px 14px 25px;
+                font: italic 20px 'Russo One', sans-serif;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .sub-menu {
+                display: none;
+            }
+    .content {
+        overflow: hidden;
+        background: #fff;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/

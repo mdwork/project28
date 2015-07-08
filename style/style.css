@@ -62,6 +62,14 @@ a:hover                        { text-decoration:none; }
 	border: 8px solid #575757;
     background: #fff;
 }
+h1 {
+    display: inline-block;
+    margin-bottom: 35px;
+    font: italic 20px 'Russo One', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e30613;
+    line-height: 1;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -225,12 +233,15 @@ a:hover                        { text-decoration:none; }
     .content {
         display: table-cell;
         overflow: hidden;
-        padding: 45px;
+        padding: 45px 45px 55px;
         background: #fff;
         vertical-align: top;
     }
         .list-item-menu {
             overflow: hidden;
+        }
+        .page-item .list-item-menu {
+            margin-bottom: 30px;
         }
             .list-item-menu li {
                 overflow: hidden;
@@ -238,7 +249,12 @@ a:hover                        { text-decoration:none; }
                 float: left;
                 width: 225px;
                 height: 170px;
-                margin: 0 0 40px 40px;
+                margin: 40px 0 0 40px;
+            }
+            .list-item-menu li:nth-child(1),
+            .list-item-menu li:nth-child(2),
+            .list-item-menu li:nth-child(3) {
+                margin-top: 0;
             }
             .list-item-menu li:nth-child(3n + 1) {
                 margin-left: 0;
@@ -248,7 +264,7 @@ a:hover                        { text-decoration:none; }
                     height: 100%;
                     transition: .3s;
                 }
-                .list-item-menu li:hover .foto:hover {
+                .list-item-menu li:hover .foto {
                     width: 120%;
                     height: 120%;
                     margin: -10% 0 0 -10%;
@@ -264,11 +280,33 @@ a:hover                        { text-decoration:none; }
                     font: italic 17px 'Russo One', sans-serif;
                     color: #fff;
                     text-transform: uppercase;
+                    transition: .3s;
                 }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+                .list-item-menu li:hover .desc {
+                    background: rgba(0, 0, 0, .8);
+                }
+        .list-crab {
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+            .list-crab li {
+                float: left;
+                margin-right: 7px;
+            }
+                .list-crab li:before {
+                    content: '/';
+                    margin-right: 5px;
+                    color: #979797;
+                }
+                .list-crab li:first-child:before {
+                    display: none;
+                }
+                .list-crab a,
+                .list-crab span {
+                    color: #979797;
+                    font-size: 14px;
+                    font-style: italic;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
